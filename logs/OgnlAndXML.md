@@ -14,7 +14,6 @@ Mayaaテンプレート上で、条件分岐を書こうとしました
 ```rb
 <m:if test="${isNormal && isFrozen}">  <img src="frozen.png" /></m:if>
 ```
-
 </details>
 
 これは普通に動くはず」**と思っていました。
@@ -23,7 +22,7 @@ Mayaaテンプレート上で、条件分岐を書こうとしました
 
 <details><summary>正解はこうでした。<summary>
 
-### && を &amp;&amp; にする
+ ### && を' &amp;&amp;' にする
 
 ```rb
 <m:if test="${isNormal &amp;&amp; isFrozen}">  <img src="frozen.png" /></m:if>
