@@ -4,12 +4,12 @@
 
 ### 背景:追加返礼品ページで、配送温度帯のアイコンを制御するタスクがありました
 
-・常温のみ → アイコンは表示しない
+・常温のみ → アイコンは表示しない <br/>
 ・冷蔵 or 冷凍も可能 → 該当アイコンを表示する
 
 Mayaaテンプレート上で、条件分岐を書こうとしました
 
-<details><summary>最初に書いたコード（動かなかった）<summary>
+<details open><summary>最初に書いたコード（動かなかった）<summary>
 
 ```rb
 <m:if test="${isNormal && isFrozen}">  <img src="frozen.png" /></m:if>
@@ -21,7 +21,7 @@ Mayaaテンプレート上で、条件分岐を書こうとしました
 しかし、実際には エラー
 
 
-<details><summary>正解はこうでした。<summary>
+<details open><summary>正解はこうでした。<summary>
 
 ### && を &amp;&amp; にする
 
@@ -43,8 +43,8 @@ Mayaaでは「XML × OGNL」が同居している
 
 ${} の中に書いたとしても、XMLの制約は適用される
 
-まとめ
-・構造をしっかり把握しよう
+まとめ<br/>
+・構造をしっかり把握しよう<br/>
 ・Mayaaは XML → OGNL の順で処理される
 
 おわりに
